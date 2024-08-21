@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazo - Flora e Fauna</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+        .gallery figure {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 500px; 
+            height: 300px; 
+            object-fit: cover; 
+        }
+        .gallery figcaption {
+            flex: 1;
+        }
+
+    
+        header {
+            position: relative;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: linear-gradient(to right, #00796b 30%, #e0f7fa 70%);
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .header-content h1 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 300;
+        }
+
+        .header-image {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Explorando a Amazonia </h1>
+            <nav>
+                <ul>
+                    <li><a hfer="#home">Home</a></a></li>
+                    <li><a href="#flora">Flora</a></li>
+                    <li><a href="#fauna">Fauna</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="imagens/bioma-amazonia-topo.png" alt="Imagem de topo" class="header-image">
+    </header>
+
+    <section id="flora">
+        <h2>Flora da Amazonia</h2>
+        <div class="gallery">
+            <figure>
+                <img src="imagem1.jpg" alt="Flora do Pantanal 1">
+                <figcaption>descrticao da planta</figcaption>
+            </figure>
+            <figure>
+                <img src="flora2.jpg" alt="Flora do Pantanal 2">
+                <figcaption>Descrição da planta 2</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="fauna">
+        <h2>Fauna da Amazonia</h2>
+        <div class="gallery">
+            <figure>
+                <img src="fauna1.jpg" alt="Fauna do Pantanal 1">
+                <figcaption>Descrição do animal 1</figcaption>
+            </figure>
+            <figure>
+                <img src="fauna2.jpg" alt="Fauna do Pantanal 2">
+                <figcaption>Descrição do animal 2</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre o Amazonia</h2>
+        <p> sobre a amazonia aki 
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Amamzonia - Flora e Fauna. Desenvolvido por alunos do 3º ano C</p>
+        <p>Escola: Escola militar estadual professor Natalino Ferreita Mendes</p>
+    </footer>
+</body>
+</html>

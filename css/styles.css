@@ -1,0 +1,150 @@
+body, h1, h2, p, ul, li, figure, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    background: linear-gradient(to right, #00796b 30%, #e0f7fa 70%);
+    color: #fff;
+    padding: 1rem; /* Ajuste o padding para telas menores */
+    text-align: left;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    z-index: 1;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte para telas menores */
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+header nav ul li {
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.header-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery figure {
+    display: flex;
+    flex-direction: column; /* Alterado para coluna em telas pequenas */
+    align-items: center;
+    gap: 10px; /* Reduzido o gap */
+}
+
+.gallery img {
+    width: 100%; /* Ajuste a largura para telas menores */
+    height: auto; /* Ajuste a altura proporcionalmente */
+    max-width: 500px; /* Define uma largura máxima para imagens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.gallery figcaption {
+    padding: 1rem;
+    background: #078a7a;
+    font-weight: 300;
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+footer {
+    background: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    bottom: 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-weight: 300;
+}
+
+/* Adaptações para telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem 0.5rem; /* Ajuste o padding */
+    }
+
+    .header-content h1 {
+        font-size: 1.25rem; /* Ajuste o tamanho da fonte */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Alinha os itens da navegação verticalmente */
+        gap: 0.5rem; /* Reduz o gap */
+    }
+
+    header nav ul li {
+        margin-right: 0; /* Remove o margin-right */
+    }
+
+    .gallery figure {
+        flex-direction: column; /* Ajuste para layout em coluna */
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1rem 0.25rem; /* Ajuste o padding */
+    }
+
+    .header-content h1 {
+        font-size: 1rem; /* Ajuste o tamanho da fonte */
+    }
+}
